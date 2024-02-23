@@ -158,15 +158,30 @@ print("\nРозділ 1.3 Псевдоніми\n")
 
  */
 
+typealias Moisture = Int
+typealias Pascal = Int
+typealias Degrees = Double
+
+var humidity: Moisture = 50
+var pressure:  Pascal = 1020
+var temperature: Degrees = 18
+
+
+
 print("Погода вчора:")
-print("Тиск: hPa")
-print("Вологість: %")
-print("Температура: C")
+print("Тиск: \(pressure) hPa")
+print("Вологість: \(humidity) %")
+print("Температура: \(temperature) C")
+
+temperature = -9
+humidity = 23
+pressure = 1167
 
 print("\nПогода сьогодні:")
-print("Тиск: hPa")
-print("Вологість: %")
-print("Температура: C")
+
+print("Тиск: \(pressure) hPa")
+print("Вологість: \(humidity) %")
+print("Температура: \(temperature) C")
 
 
 print("\nРозділ 1.4 Кортежі\n")
@@ -202,16 +217,24 @@ print("\nРозділ 1.4 Кортежі\n")
 
  */
 
-print("Прізвище: ")
-print("Вік: ")
-print("Зріст: см")
-print("Вага: кг")
-print("У шлюбі: ")
+var profileInfo = (firstName: userFirstName, secondName: userSecondName, age: userAge, hight: userHight, weight: userWeight, status: isUserMarried)
+var weatherInfo = (temperature, humidity, pressure)
+
+profileInfo.age = 21
+profileInfo.weight = 65
+weatherInfo.0 = 32
+
+
+print("Прізвище: \(profileInfo.secondName)")
+print("Вік: \(profileInfo.age)")
+print("Зріст: \(profileInfo.hight) см")
+print("Вага: \(profileInfo.weight) кг")
+print("У шлюбі: \(profileInfo.status)")
 
 print("\nІнфорація про погоду:")
-print("Тиск: hPa")
-print("Вологість: %")
-print("Температура: C")
+print("Тиск: \(weatherInfo.2) hPa")
+print("Вологість: \(weatherInfo.1) %")
+print("Температура: \(weatherInfo.0) C")
 
 
 print("\nРозділ 1.5 Опціонали\n")
@@ -229,6 +252,15 @@ print("\nРозділ 1.5 Опціонали\n")
 
  */
 
-print("Користувач авторизован: ")
+var userLoggedIn: Bool?
+print(userLoggedIn)
 
-print("Користувач авторизован: ")
+userLoggedIn = true
+print(userLoggedIn)
+
+
+
+
+
+
+
