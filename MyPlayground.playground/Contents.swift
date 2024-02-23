@@ -32,10 +32,18 @@ print("Розділ 1.1 Константи\n")
 
  */
 
-print("Ім'я хатньої тварини: ")
-print("Вага хатньої тварини: кг")
-print("Вік хатньої тварини: років")
-print("Хатня тварина голодна: ")
+let petName: String = "Cheddar"
+print(petName)
+
+let petWeight: Double = 7.3
+let weightValue: String = "kg"
+print(petWeight, weightValue)
+
+let petAge: Int = 3
+print(petAge)
+
+let isPetHungry: Bool = true
+print(isPetHungry)
 
 
 print("\nРозділ 1.2 Змінні\n")
@@ -82,21 +90,33 @@ print("\nРозділ 1.2 Змінні\n")
 
  */
 
-print("Інформація за 2018 р.:")
-print("Ім'я: ")
-print("Прізвище: ")
-print("Вік: ")
-print("зріст: см")
-print("Вага: кг")
-print("У шлюбі: ")
+var userFirstName: String = "Max"
+var userSecondName: String = "Fedorchuk"
+var userAge: Int = 28
+var userHight: Double = 1.83
+var userWeight: Double = 74.3
+var isUserMarried: Bool = false
+
+print("Інформація за 2018 рік:")
+print(userFirstName)
+print(userSecondName)
+print(userAge)
+print(userHight)
+print(userWeight)
+print(isUserMarried)
+
+userAge = 33
+userWeight = 76.4
+isUserMarried = true
 
 print("\nІнформація за поточний рік:")
-print("Ім'я: ")
-print("Прізвище: ")
-print("Вік: ")
-print("зріст: см")
-print("Вага: кг")
-print("У шлюбі: ")
+print(userFirstName)
+print(userSecondName)
+print(userAge)
+print(userHight)
+print(userWeight)
+print(isUserMarried)
+
 
 
 print("\nРозділ 1.3 Псевдоніми\n")
